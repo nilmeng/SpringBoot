@@ -21,6 +21,7 @@ public class RangeRule extends ValidationRule {
 				return ( (val>=minVal) && (val<=maxVal) ) ? true : false;
 			}
 		} catch (NumberFormatException e) {			
+			System.out.println(e);
 		}
 		
 		return false;
