@@ -20,8 +20,8 @@ public class RangeRule extends ValidationRule {
 				long val = Long.parseLong(str);			
 				return ( (val>=minVal) && (val<=maxVal) ) ? true : false;
 			}
-		} catch (NumberFormatException e) {			
-			System.out.println(e);
+		} catch (NumberFormatException ex) {			
+			System.out.println(ex.toString());
 		}
 		
 		return false;
